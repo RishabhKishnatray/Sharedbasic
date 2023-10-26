@@ -1,8 +1,8 @@
 def call() {
     sh '''
     sudo apt update
-sudo apt -y install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible -y
-sudo apt install ansible -y
+sudo apt install python3-pip -y
+sudo pip install boto3 botocore
+sudo pip3 install ansible==2.9.6
 '''
 }
